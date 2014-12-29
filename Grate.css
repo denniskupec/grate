@@ -1,0 +1,83 @@
+
+/*
+ * Grate - Responsive CSS Grid System
+ * 2014 Dennis Kupec
+ * MIT License
+ */
+
+/* Base Elements */
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+}
+
+hr {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border: 0;
+   border-top: 1px solid #eeeeee;
+}
+
+p {
+   margin: 0 0 1em;
+}
+
+/* Grid System */
+.row {
+   clear: both;
+   padding: 0;
+   margin: 0 0 0 -1em;
+}
+
+.row:after {
+   clear: both;
+   margin-bottom: 1em;
+}
+
+[class^="span"], 
+[class*=" span"] {
+   display: block;
+   float: left;
+   width: 100%;
+   height: inherit;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   -webkit-background-clip: padding-box;
+           background-clip: padding-box;
+   margin: 0 0 1em 0;
+   border-left: 1em solid transparent;
+}
+
+@media only screen and (min-width:480px) {
+   .span1 { width: 7.14%; }
+   .span2 { width: 14.28%; }
+   .span3 { width: 21.42%; }
+   .span4 { width: 28.57%; }
+   .span5 { width: 35.71%; }
+   .span6 { width: 42.85%; }
+   .span7 { width: 50%; }
+   .span8 { width: 57.14%; }
+   .span9 { width: 64.28%; }
+   .span10 { width: 71.42%; }
+   .span11 { width: 78.57%; }
+   .span12 { width: 85.71%; }
+   .span13 { width: 92.85%; }
+   .span14 { width: 100%; }
+}
+
+/* Containers */
+.container { margin: 0 auto; }
+.container:after { clear: both; }
+
+/* The rest is up to you */
